@@ -8,6 +8,5 @@ requirejs.config({
 
 requirejs(['app/ui'],
   function (ui) {
-
   }
 );
