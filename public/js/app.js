@@ -3,168 +3,168 @@ variables = [
   [
     "On card",
     [
-      ["TRIG_OC_TRANS_NUMBER"           , 0],
-      ["TRIG_OC_BALANCE"                , 1],
-      ["TRIG_OC_CATEGORY"               , 2],
-      ["TRIG_OC_ACTIVATION"             , 3],
-      ["TRIG_OC_DAYS_FROM_VALIDITY_DATE", 4]
+      ["OC_TRANS_NUMBER"           , 0],
+      ["OC_BALANCE"                , 1],
+      ["OC_CATEGORY"               , 2],
+      ["OC_ACTIVATION"             , 3],
+      ["OC_DAYS_FROM_VALIDITY_DATE", 4]
     ]
   ],
 
   [
     "On terminal",
     [
-      ['TRIG_OT_TRANS_NUMBER'        , 5],
-      ['TRIG_OT_PROVISION'           , 6],
-      ['TRIG_OT_SOLD'                , 7],
-      ['TRIG_OT_SUPER_ADD_SOLD'      , 8]
+      ['OT_TRANS_NUMBER'        , 5],
+      ['OT_PROVISION'           , 6],
+      ['OT_SOLD'                , 7],
+      ['OT_SUPER_ADD_SOLD'      , 8]
     ],
   ],
 
   [
     "Monthly user stats",
     [
-      ['TRIG_USM_TRANS_NUMBER'       , 9],
-      ['TRIG_USM_TRANS_NUMBER_ADD'   , 10],
-      ['TRIG_USM_TRANS_NUMBER_SUB'   , 11],
-      ['TRIG_USM_DATE_PERIOD_BEGIN'  , 12],
-      ['TRIG_USM_BALANCE_TOTAL_ADD'  , 13],
-      ['TRIG_USM_BALANCE_TOTAL_SUB'  , 14]
+      ['USM_TRANS_NUMBER'       , 9],
+      ['USM_TRANS_NUMBER_ADD'   , 10],
+      ['USM_TRANS_NUMBER_SUB'   , 11],
+      ['USM_DATE_PERIOD_BEGIN'  , 12],
+      ['USM_BALANCE_TOTAL_ADD'  , 13],
+      ['USM_BALANCE_TOTAL_SUB'  , 14]
     ]
   ],
 
   [
     "Yearly user stats" ,
     [
-      ['TRIG_USY_TRANS_NUMBER'       , 15],
-      ['TRIG_USY_TRANS_NUMBER_ADD'   , 16],
-      ['TRIG_USY_TRANS_NUMBER_SUB'   , 17],
-      ['TRIG_USY_DATE_PERIOD_BEGIN'  , 18],
-      ['TRIG_USY_BALANCE_TOTAL_ADD'  , 19],
-      ['TRIG_USY_BALANCE_TOTAL_SUB'  , 20]
+      ['USY_TRANS_NUMBER'       , 15],
+      ['USY_TRANS_NUMBER_ADD'   , 16],
+      ['USY_TRANS_NUMBER_SUB'   , 17],
+      ['USY_DATE_PERIOD_BEGIN'  , 18],
+      ['USY_BALANCE_TOTAL_ADD'  , 19],
+      ['USY_BALANCE_TOTAL_SUB'  , 20]
     ]
   ],
 
   [
     "All times user stats",
     [
-      ['TRIG_USE_TRANS_NUMBER'       , 21],
-      ['TRIG_USE_TRANS_NUMBER_ADD'   , 22],
-      ['TRIG_USE_TRANS_NUMBER_SUB'   , 23],
-      ['TRIG_USE_DATE_PERIOD_BEGIN'  , 24],
-      ['TRIG_USE_BALANCE_TOTAL_ADD'  , 25],
-      ['TRIG_USE_BALANCE_TOTAL_SUB'  , 26]
+      ['USE_TRANS_NUMBER'       , 21],
+      ['USE_TRANS_NUMBER_ADD'   , 22],
+      ['USE_TRANS_NUMBER_SUB'   , 23],
+      ['USE_DATE_PERIOD_BEGIN'  , 24],
+      ['USE_BALANCE_TOTAL_ADD'  , 25],
+      ['USE_BALANCE_TOTAL_SUB'  , 26]
     ]
   ],
 
   [
     "Daily terminal stats",
     [
-      ['TRIG_TSD_TRANS_NUMBER'       , 27],
-      ['TRIG_TSD_TRANS_NUMBER_ADD'   , 28],
-      ['TRIG_TSD_TRANS_NUMBER_SUB'   , 29],
-      ['TRIG_TSD_DATE_PERIOD_BEGIN'  , 30],
-      ['TRIG_TSD_BALANCE_ADD'        , 31],
-      ['TRIG_TSD_BALANCE_SUB'        , 32]
+      ['TSD_TRANS_NUMBER'       , 27],
+      ['TSD_TRANS_NUMBER_ADD'   , 28],
+      ['TSD_TRANS_NUMBER_SUB'   , 29],
+      ['TSD_DATE_PERIOD_BEGIN'  , 30],
+      ['TSD_BALANCE_ADD'        , 31],
+      ['TSD_BALANCE_SUB'        , 32]
     ]
   ],
 
   [
     "Monthly terminal stats",
     [
-      ['TRIG_TSM_TRANS_NUMBER'       , 33],
-      ['TRIG_TSM_TRANS_NUMBER_ADD'   , 34],
-      ['TRIG_TSM_TRANS_NUMBER_SUB'   , 35],
-      ['TRIG_TSM_DATE_PERIOD_BEGIN'  , 36],
-      ['TRIG_TSM_BALANCE_ADD'        , 37],
-      ['TRIG_TSM_BALANCE_SUB'        , 38]
+      ['TSM_TRANS_NUMBER'       , 33],
+      ['TSM_TRANS_NUMBER_ADD'   , 34],
+      ['TSM_TRANS_NUMBER_SUB'   , 35],
+      ['TSM_DATE_PERIOD_BEGIN'  , 36],
+      ['TSM_BALANCE_ADD'        , 37],
+      ['TSM_BALANCE_SUB'        , 38]
     ]
   ],
 
   [
     "Yearly terminal stats",
     [
-      ['TRIG_TSY_TRANS_NUMBER'       , 39],
-      ['TRIG_TSY_TRANS_NUMBER_ADD'   , 40],
-      ['TRIG_TSY_TRANS_NUMBER_SUB'   , 41],
-      ['TRIG_TSY_DATE_PERIOD_BEGIN'  , 42],
-      ['TRIG_TSY_BALANCE_ADD'        , 43],
-      ['TRIG_TSY_BALANCE_SUB'        , 44]
+      ['TSY_TRANS_NUMBER'       , 39],
+      ['TSY_TRANS_NUMBER_ADD'   , 40],
+      ['TSY_TRANS_NUMBER_SUB'   , 41],
+      ['TSY_DATE_PERIOD_BEGIN'  , 42],
+      ['TSY_BALANCE_ADD'        , 43],
+      ['TSY_BALANCE_SUB'        , 44]
     ]
   ],
 
   [
     "All times terminal stats",
     [
-      ['TRIG_TSE_TRANS_NUMBER'       , 45],
-      ['TRIG_TSE_TRANS_NUMBER_ADD'   , 46],
-      ['TRIG_TSE_TRANS_NUMBER_SUB'   , 47],
-      ['TRIG_TSE_DATE_PERIOD_BEGIN'  , 48],
-      ['TRIG_TSE_BALANCE_ADD'        , 49],
-      ['TRIG_TSE_BALANCE_SUB'        , 50]
+      ['TSE_TRANS_NUMBER'       , 45],
+      ['TSE_TRANS_NUMBER_ADD'   , 46],
+      ['TSE_TRANS_NUMBER_SUB'   , 47],
+      ['TSE_DATE_PERIOD_BEGIN'  , 48],
+      ['TSE_BALANCE_ADD'        , 49],
+      ['TSE_BALANCE_SUB'        , 50]
     ]
   ],
 
   [
     "Other",
     [
-      ['TRIG_OTH_RANDOM_NUMBER_100'  , 51],
-      ['TRIG_OTH_DATE'               , 52],
-      ['TRIG_OTH_TIME'               , 53],
-      ['TRIG_OTH_DAY_IN_WEEK_MASK'   , 54]
+      ['OTH_RANDOM_NUMBER_100'  , 51],
+      ['OTH_DATE'               , 52],
+      ['OTH_TIME'               , 53],
+      ['OTH_DAY_IN_WEEK_MASK'   , 54]
     ]
   ],
 
   [
     "Trigger",
     [
-      ['TRIG_COUNT_DAY'              , 55],
-      ['TRIG_COUNT_MONTH'            , 56],
-      ['TRIG_COUNT_YEAR'             , 57],
-      ['TRIG_COUNT_EVER'             , 58]
+      ['COUNT_DAY'              , 55],
+      ['COUNT_MONTH'            , 56],
+      ['COUNT_YEAR'             , 57],
+      ['COUNT_EVER'             , 58]
     ]
   ],
 
   [
     "Generated value",
     [
-      ['TRIG_GDATA_0'                , 59],
-      ['TRIG_GDATA_1'                , 60],
-      ['TRIG_GDATA_2'                , 61],
-      ['TRIG_GDATA_3'                , 62],
-      ['TRIG_GDATA_4'                , 63]
+      ['GDATA_0'                , 59],
+      ['GDATA_1'                , 60],
+      ['GDATA_2'                , 61],
+      ['GDATA_3'                , 62],
+      ['GDATA_4'                , 63]
     ]
   ],
 
   [
     "From transaction",
     [
-      ['TRIG_FT_EFFECTIVE_RATE'      , 64],
-      ['TRIG_FT_SOLD_TRANSACTION'    , 65],
-      ['TRIG_FT_CODE_TRANSACTION'    , 66],
-      ['TRIG_FT_PURCHASE_VALUE'      , 67],
-      ['TRIG_USM_SOLD_AMOUNT'        , 68],
-      ['TRIG_USY_SOLD_AMOUNT'        , 69],
-      ['TRIG_USE_SOLD_AMOUNT'        , 70],
-      ['TRIG_OC_ID_ASCII_1'          , 71],
-      ['TRIG_OC_ID_ASCII_2'          , 72],
-      ['TRIG_OC_ID_ASCII_3'          , 73],
-      ['TRIG_OC_ID_ASCII_4'          , 74],
-      ['TRIG_OC_ID_ASCII_5'          , 75],
-      ['TRIG_OC_ID_ASCII_6'          , 76],
-      ['TRIG_OC_ID_ASCII_7'          , 77],
-      ['TRIG_OC_ID_ASCII_8'          , 78]
+      ['FT_EFFECTIVE_RATE'      , 64],
+      ['FT_SOLD_TRANSACTION'    , 65],
+      ['FT_CODE_TRANSACTION'    , 66],
+      ['FT_PURCHASE_VALUE'      , 67],
+      ['USM_SOLD_AMOUNT'        , 68],
+      ['USY_SOLD_AMOUNT'        , 69],
+      ['USE_SOLD_AMOUNT'        , 70],
+      ['OC_ID_ASCII_1'          , 71],
+      ['OC_ID_ASCII_2'          , 72],
+      ['OC_ID_ASCII_3'          , 73],
+      ['OC_ID_ASCII_4'          , 74],
+      ['OC_ID_ASCII_5'          , 75],
+      ['OC_ID_ASCII_6'          , 76],
+      ['OC_ID_ASCII_7'          , 77],
+      ['OC_ID_ASCII_8'          , 78]
     ]
   ],
 
   [
     "Value for test",
     [
-      ['TRIG_TEST_1'                 , 101],
-      ['TRIG_TEST_2'                 , 102],
-      ['TRIG_TEST_3'                 , 103],
-      ['TRIG_TEST_4'                 , 104],
-      ['TRIG_TEST_5'                 , 105]
+      ['TEST_1'                 , 101],
+      ['TEST_2'                 , 102],
+      ['TEST_3'                 , 103],
+      ['TEST_4'                 , 104],
+      ['TEST_5'                 , 105]
     ]
   ]
 
