@@ -1,0 +1,14 @@
+
+
+.el-code , .el-op{
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+footer {
+  margin-top: 300px;
+}
+
+label.active {
+  width: 100%;
+}
