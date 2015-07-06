@@ -23,8 +23,8 @@ function( React,       helpers,       data) {
     handleClick: function(idx, varName, varCode) {
       var picker = React.findDOMNode(this.refs.varPicker);
       $(picker).trigger(varAddedEvent, {'var': varName, 'code': varCode});
-
     },
+
 
     render: function() {
 
@@ -54,6 +54,17 @@ function( React,       helpers,       data) {
 
   var VariablePicker = React.createClass({displayName: "VariablePicker",
 
+    handleValueSubmit: function () {
+      var input = $(React.findDOMNode(this.refs.numValue));
+
+      var value = input.val();
+
+      input.trigger(varAddedEvent, {'val': value});
+
+      input.val('');
+    },
+
+
     render: function() {
 
       var variableGroups = this.props.variables.map( function(variableGroup, index){
@@ -66,9 +77,24 @@ function( React,       helpers,       data) {
         );
       }, this);
 
-
+      var component = this;
       return (
-        React.createElement("div", {className: "card-panel"}, variableGroups)
+        React.createElement("div", {className: "card-panel"}, 
+          React.createElement("div", {className: "num-value-container"}, 
+            React.createElement("div", {className: "input-field"}, 
+              React.createElement("input", {ref: "numValue", id: "num-value", type: "text"}), 
+              React.createElement("label", {htmlFor: "num-value", className: ""}, "Numeric value")
+            ), 
+
+            React.createElement("button", {className: "btn waves-effect waves-light blue lighten-1", type: "submit", name: "action", onClick: component.handleValueSubmit}, 
+              "Add", 
+              React.createElement("i", {className: "material-icons right"}, "input")
+            )
+
+          ), 
+
+          variableGroups
+        )
       );
     }
 
@@ -167,10 +193,18 @@ function( React,       helpers,       data) {
       })
 
       $(window).on( varAddedEvent, function(event, opts){
-        var code     = opts['code'];
-        var variable = opts['var'];
+        var code     = opts['code'],
+            variable = opts['var'],
+            val      = opts['val'];
 
-        var addedExpr = " $" + variable;
+        var addedExpr;
+
+        if (val){
+          addedExpr = val;
+        }else{
+          addedExpr = " $" + variable;
+        }
+
 
         var newState = {};
 
@@ -237,7 +271,7 @@ function( React,       helpers,       data) {
 
       var submitButton = null;
       if (valid && ! (expr === "")){
-        submitButton = React.createElement("button", {className: "btn waves-effect waves-light", type: "submit", name: "action", onClick: this.handleSubmit}, 
+        submitButton = React.createElement("button", {className: "btn waves-effect waves-light blue lighten-1", type: "submit", name: "action", onClick: this.handleSubmit}, 
           "Submit", 
           React.createElement("i", {className: "material-icons right"}, "send")
         )
