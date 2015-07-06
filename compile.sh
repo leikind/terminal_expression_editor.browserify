@@ -1,3 +1,3 @@
 #!/bin/sh
 
-jsx --harmony --watch --extension jsx public/src/ public/js
+jsx --watch --extension jsx public/src/ public/scripts/app

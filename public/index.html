@@ -11,12 +11,13 @@
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
+    <!-- Support of AMD by hammer and materialize is so half-assed
+        that it is easier to require them the old way, not with RequireJS -->
+    <script src="scripts/lib/jquery.js"></script>
+    <script src="scripts/lib/hammer.js"></script>
+    <script src="scripts/lib/materialize.js"></script>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/react.min.js"></script>
-    <script src="js/materialize.min.js"></script>
-    <script src="js/app.js" ></script>
-
+    <script data-main="scripts/app" src="scripts/lib/require.js"></script>
 
   </head>
   <body>
